@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¿Quiénes somos? | La Nueva Moda</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    :root {
+      --azul-rey: #0033a0;
+      --blanco: #ffffff;
+      --gris-claro: #f4f6f8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--blanco);
+      color: #333;
+    }
+
+    header {
+      background-color: var(--azul-rey);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--blanco);
+    }
+
+    header h1 {
+      font-size: 1.8em;
+    }
+
+    nav a {
+      color: var(--blanco);
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('D:/examen/7.jpeg') center/cover no-repeat;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .content h3 {
+      text-align: center;
+      color: var(--azul-rey);
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+
+    .content p {
+      font-size: 1.15em;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .item {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 22%;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .item:hover {
+      transform: scale(1.02);
+    }
+
+    .item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .item img:hover {
+      opacity: 0.8;
+    }
+
+    .item img:active {
+      transform: scale(1.05);
+    }
+
+    .item img {
+      cursor: zoom-in;
+    }
+
+    .caption {
+      padding: 15px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+
+    .item a {
+      text-decoration: none;
+    }
+
+    .question-section {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: transparent;
+      margin-top: -60px;
+    }
+
+    .question-section h3 {
+      font-size: 1.6em;
+      color: var(--azul-rey);
+      margin-bottom: 15px;
+    }
+
+    .question-section p {
+      font-size: 1.15em;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: justify;
+    }
+
+    footer {
+      background-color: var(--azul-rey);
+      color: var(--blanco);
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>La Nueva Moda</h1>
+    <nav>
+      <a href="pagina2.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contactanos.html">Contáctanos</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Moda y estilo al alcance de todos</h2>
+    <p>Conócenos y descubre por qué somos líderes en calidad y servicio.</p>
+  </section>
+
+  <section class="content">
+    <h3>¿Quiénes somos?</h3>
+    <p>
+      Somos La Nueva Moda, una tienda con más de 14 años de trayectoria en el corazón de Tianguistengo, Hidalgo. Nos dedicamos a ofrecer productos de calidad en las categorías de papelería, zapatería, accesorios y moda, siempre buscando satisfacer las necesidades de nuestros clientes con un trato cercano y amable.
+      Nuestra tienda ofrece un ambiente agradable donde podrás encontrar artículos novedosos, útiles y modernos para ti, tu familia o para regalar. Nos encanta sorprender a nuestros clientes con productos exclusivos que combinan estilo y funcionalidad, contamos con:
+    </p>
+
+    <div class="gallery">
+      <div class="item">
+        <a href="img/18.jpeg" target="_blank"><img src="img/18.jpeg" alt="Productos escolares"></a>
+        <div class="caption">Contamos con una gran variedad de productos de papeleria, desde utiles escolares hasta articulos para decoraciones</div>
+      </div>
+      <div class="item">
+        <a href="img/19.jpeg" target="_blank"><img src="img/19.jpeg" alt="Decoraciones creativas"></a>
+        <div class="caption">No pueden faltar las decoraciones creativas, para celebraciones como bautizos o fiestas de cumpleaños.</div>
+      </div>
+      <div class="item">
+        <a href="img/20.jpeg" target="_blank"><img src="img/20.jpeg" alt="Mochilas y bolsos"></a>
+        <div class="caption">Mochilas escolares para niños y bolsos para complementar tus looks, tenemos diferentes estilos y colores.</div>
+      </div>
+      <div class="item">
+        <a href="img/21.jpeg" target="_blank"><img src="img/21.jpeg" alt="Artículos para regalo"></a>
+        <div class="caption">También tenemos artículos para regalo para que llegues con las mejores sorpresas para los festejados.</div>
+      </div>
+    </div>
+
+    <p>
+      Estamos ubicados en el barrio Tlane, en el centro de Tianguistengo, con horario de atención de 9:00 a.m. a 8:00 p.m. Ven a visitarnos y descubre por qué somos la elección favorita de nuestros clientes.
+    </p>
+
+    <div class="gallery">
+      <div class="item">
+        <a href="img/22.jpeg" target="_blank"><img src="img/22.jpeg" alt="Bocinas"></a>
+        <div class="caption">Somos una tienda que tambien te ofrece equipos de sonido, altavoces y más.</div>
+      </div>
+      <div class="item">
+        <a href="img/23.jpeg" target="_blank"><img src="img/23.jpeg" alt="Moños"></a>
+        <div class="caption">No solo contamos con productos de papeleria, si no también con accesorios de todo tipo</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="question-section">
+    <h3>¿Por qué elegir La Nueva Moda?</h3>
+    <p>
+     Porque aquí encontrarás una combinación perfecta entre calidad, precios accesibles y atención personalizada. En La Nueva Moda trabajamos cada día para ofrecer una experiencia de compra confiable, con productos cuidadosamente seleccionados que se ajustan a todas las edades y gustos.
+      Nuestro compromiso es brindarte siempre lo mejor: desde artículos básicos hasta novedades exclusivas, todo en un solo lugar.
+      Ya sea que busques un detalle especial, algo para ti o para tu hogar, aquí lo encontrarás con una sonrisa.
+    </p>
+  </section>
+
+  <footer>
+    <p style="text-align:center; margin-top:20px;">© 2025 La Nueva Moda | Andrea Lizbeth Chargoy Espinoza y Mariana Hernández Piña</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Nueva Moda - Accesorios y belleza</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="pagina2.html">Inicio</a></li>
+        <li><a href="#contacto">Contáctanos</a></li>
+      </ul>
+    </nav>
+
+    <h1>La Nueva Moda</h1>
+    <p>Accesorios y artículos de belleza para complementar tu look.</p>
+  </header>
+
+  <section class="galeria" id="galeria">
+    <h2>Nuestros productos</h2>
+    <div class="gallery">
+      <div>
+        <img src="img/54.jpeg" alt="Producto 1">
+        <p>Gorros infantiles.</p>
+      </div>
+      <div>
+        <img src="img/55.jpeg" alt="Producto 2">
+        <p>Gorras.</p>
+      </div>
+      <div>
+        <img src="img/56.jpeg" alt="Producto 3">
+        <p>Moños.</p>
+      </div>
+      <div>
+        <img src="img/57.jpeg" alt="Producto 4">
+        <p>Pinzas.</p>
+      </div>
+      <div>
+        <img src="img/58.jpeg" alt="Producto 5">
+        <p>Maquillaje.</p>
+      </div>
+      <div>
+        <img src="img/59.jpeg" alt="Producto 6">
+        <p>Barnices.</p>
+      </div>
+      <div>
+        <img src="img/60.jpeg" alt="Producto 7">
+        <p>Bolsas de diferentes modelos.</p>
+      </div>
+      <div>
+        <img src="img/61.jpeg" alt="Producto 8">
+        <p>Mochilas.</p>
+      </div>
+      <div>
+        <img src="img/62.jpeg" alt="Producto 9">
+        <p>Cinturones.</p>
+      </div>
+      <div>
+        <img src="img/63.jpeg" alt="Producto 10">
+        <p>Sombrillas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <div class="social-icons">
+      <a href="https://wa.me/message/YR4DT6GOE5WND1" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/share/1AU7jse8S2/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/LANUEVAMODA_25?t=kam7LAJHT7bih1__5pdn1Q&s=08" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/_lanuevamoda1?igsh=MWlzMTA0OHV1aGk1dA==" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    Autoras: Andrea Lizbeth Chargoy Espinoza y Mariana Hernández Piña
+  </footer>
+
+  <script>
+    $('a[href^="#contacto"]').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: $('#contacto').offset().top
+      }, 500);
+    });
+  </script>
+</body>
+</html>

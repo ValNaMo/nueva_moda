@@ -1,0 +1,171 @@
+:root {
+  --azul-oscuro: #1e3a8a;
+  --azul-claro: #3b82f6;
+  --gris: #f1f5f9;
+  --blanco: #ffffff;
+  --sombra: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--gris);
+  color: #333;
+}
+
+header {
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+nav {
+  background-color: var(--azul-oscuro);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: var(--azul-claro);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery div {
+  background: var(--blanco);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px var(--sombra);
+  padding: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery div p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #444;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: var(--azul-claro);
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.facebook {
+  background-color: #1877F2;
+}
+
+.twitter {
+  background-color: #1DA1F2;
+}
+
+.instagram {
+  background: linear-gradient(to right, #833AB4, #FD1D1D, #FDCB82);
+}
+
+footer {
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+  padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+}

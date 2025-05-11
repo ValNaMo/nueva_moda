@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Nueva Moda</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      padding-bottom: 80px;
+    }
+
+    #header {
+      width: 100%;
+      background-color: #0033a0;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav > li {
+      position: relative;
+    }
+
+    .nav li a {
+      color: white;
+      text-decoration: none;
+      padding: 16px 20px;
+      display: block;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .nav li a:hover {
+      background-color: #add8e6;
+      color: #0033a0;
+    }
+
+    .nav li ul {
+      display: none;
+      position: absolute;
+      background-color: #0033a0;
+      min-width: 180px;
+      z-index: 1000;
+    }
+
+    .nav li:hover > ul {
+      display: block;
+    }
+
+    .nav li ul li {
+      position: relative;
+    }
+
+    .nav li ul li ul {
+      left: 100%;
+      top: 0;
+    }
+
+    .social {
+      position: fixed;
+      top: 200px;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .social ul {
+      list-style: none;
+    }
+
+    .social ul li a {
+      display: block;
+      padding: 18px;
+      font-size: 24px;
+      color: white;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      border-radius: 0 15px 15px 0;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .social ul li .icon-whatsapp { background: #25D366; }
+    .social ul li .icon-facebook { background: #3b5998; }
+    .social ul li .icon-twitter { background: #1da1f2; }
+    .social ul li .icon-instagram {
+      background: radial-gradient(circle at 30% 30%, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    }
+
+    .social ul li a:hover {
+      transform: scale(1.2);
+      opacity: 0.9;
+    }
+
+    .caja-marquee {
+      position: absolute;
+      top: 500px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 400px;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #0033a0;
+      text-align: center;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
+
+    .imagen-centro {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      border: 5px solid #0033a0;
+      border-radius: 15px;
+      padding: 0px;
+    }
+
+    .imagen-centro img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    footer {
+      background-color: #0033a0;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <ul class="nav">
+      <li>
+        <a href="#">Quienes somos</a>
+        <ul>
+          <li><a href="quienessomos.html">Historia</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Servicios</a>
+        <ul>
+          <li><a href="zapatos.html">Zapatos</a></li>
+          <li><a href="ropa.html">Ropa</a></li>
+          <li><a href="papeleria.html">Papelería</a></li>
+          <li><a href="accesorios.html">Accesorios y belleza</a></li>
+          <li><a href="juguetes.html">Juguetes y más</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Eventos</a>
+        <ul>
+          <li><a href="evento1.html">Pasarela de moda</a></li>
+          <li><a href="evento2.html">Expo de juguetes y peluches</a></li>
+          <li><a href="evento3.html">Especial dia del niño</a></li>
+          <li><a href="evento4.html">Desfile del Calzado 2025</a></li>
+          <li><a href="evento5.html">Segunda Exposición 2025</a></li>
+          <li><a href="evento6.html">Taller de Manualidades Creativas</a></li>
+          <li><a href="evento7.html"> Fiesta Kids Expo</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="social">
+    <ul>
+      <li><a href="https://wa.me/message/YR4DT6GOE5WND1" class="icon-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+      <li><a href="https://www.facebook.com/share/1AU7jse8S2/" class="icon-facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://x.com/LANUEVAMODA_25?t=0UIyZQEl_hOrKDoqrd-aiA&s=09" class="icon-twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/_lanuevamoda1?igsh=MWlzMTA0OHV1aGk1dA==" class="icon-instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </div>
+
+  <div class="caja-marquee">
+    <br>
+    <marquee behavior="scroll" direction="left">La Nueva Moda</marquee>
+  </br>
+  </div>
+
+  <div class="imagen-centro">
+    <img src="img/logo.png" alt="Imagen central">
+  </div>
+
+  <footer>
+   © 2025 La Nueva Moda | Andrea Lizbeth Chargoy Espinoza y Mariana Hernández Piña
+  </footer>
+</body>
+</html>
